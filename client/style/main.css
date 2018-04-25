@@ -1,0 +1,15 @@
+body {
+  background-color: #eee;
+}
+
+.clicked {
+  text-decoration: none;
+}
+
+.unclicked {
+  text-decoration: underline;
+}
+
+.imagetest {
+  background: url('../../assets/cyberman.jpg');
+}
