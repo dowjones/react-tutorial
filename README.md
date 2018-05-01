@@ -9,7 +9,7 @@ We’ll assume you have a basic understanding of the JavaScript language. We als
 ## Instructions
 - [Install](https://nodejs.org/en/download/) Node.js
 - `npm install`
-- `npm run start`
+- `npm start`
 - Open [http://localhost:3000](http://localhost:3000) and [http://localhost:3000/api/articles](http://localhost:3000/api/articles) in browser
 
 ## Where is everything?
