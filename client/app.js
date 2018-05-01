@@ -110,7 +110,7 @@ class App extends Component {
 
       return (
         <div>
-          {<button onClick={this.toggle}>Toggle Something</button>}
+          <button onClick={this.toggle}>Toggle Something</button>
           <HelloWorld />
           <HelloWorld message="Hi!" />
           {articleJSX}
