@@ -8,15 +8,13 @@ import style from '../client/style/main.css';
 
 //this is the component that generates the body of the page
 class App extends Component {
-  
-  render() {
-      return (
-        <div>
-          <HelloWorld />
-        </div>
-      );
 
-    }
+  render() {
+    return (
+      <div>
+        <HelloWorld />
+      </div>
+    );
   }
 }
 
