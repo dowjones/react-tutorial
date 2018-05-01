@@ -4,9 +4,6 @@ import React, { Component } from 'react';
 class Article extends Component {
   constructor() {
     super();
-
-    //initial state
-    this.state = {};
   }
 
   //Component Lifecycle
@@ -34,7 +31,16 @@ class Article extends Component {
   //remember that this is not HTML!!
   //https://reactjs.org/docs/introducing-jsx.html
   render() {
-    return <div></div>;
+
+    const  {
+      headline,
+      image
+    } = this.props;
+
+    return <div className="article">
+      {image && <img src={image} className="article__thumbnail" />}
+      <h2 className="article__hed">{headline}</h2>
+    </div>;
   }
 };
 
