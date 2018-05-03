@@ -20,7 +20,7 @@ class App extends Component {
       articles: null,
       error: null,
       loaded: false,
-      countdown: '99'
+      countdown: null
     };
   }
 
@@ -105,6 +105,8 @@ class App extends Component {
 
       if (countdown === 0) {
         accountMessage = <img src="https://cdn-content-production.cxpublic.com/130d147f3fa8cd444e5e5c107c5457dffdf9af67c8ee28ecfa3d3ee2dd078341.jpg" />
+      } else if (countdown === null) {
+        accountMessage = 'Welcome!';
       }
       else {
         accountMessage = `Welcome! You have ${countdown} seconds left`
