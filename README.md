@@ -29,6 +29,7 @@ We’ll assume you have a basic understanding of the JavaScript language. We als
 - [Babel](http://babeljs.io/)
 - [ES6 Overview](https://github.com/lukehoban/es6features)
 - [Hot Module Replacement Documentation](https://webpack.js.org/concepts/hot-module-replacement/)
+- [AWS Cloud9 IDE Setup Instructions](https://github.com/dowjones/react-tutorial/blob/master/AWS.Cloud9.Instructions.md)
 
 ## License
 Licensed under the [MIT License](https://github.com/dowjones/react-tutorial/blob/master/LICENSE)
