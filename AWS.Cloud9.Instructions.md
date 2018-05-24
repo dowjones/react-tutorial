@@ -1,4 +1,4 @@
-Using the AWS Cloud9 IDE with the Dow Jones Education React Tutorial
+## Using the AWS Cloud9 IDE with the Dow Jones Education React Tutorial
 
 1) Go to **https://console.aws.amazon.com/cloud9/home**
 1) Log in with your AWS account or register for a new account and log in
