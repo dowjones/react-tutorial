@@ -34,7 +34,7 @@ import style from '../client/style/main.css';
 //this is the component that generates the body of the page
 class App extends Component {
   constructor() {
-    super();
+    super(props);
 
     this.toggle = this.toggle.bind(this);
 
