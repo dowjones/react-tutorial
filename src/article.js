@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //Basic Article Component
 class Article extends Component {
-  constructor() {
+  constructor(props) {
     super(props);
 
     //initial state
