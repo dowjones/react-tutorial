@@ -65,6 +65,10 @@ class App extends Component {
     });
   }
 
+  componentWillUnmount() {
+    clearInterval(this.countdown);
+  }
+
   //click handler for button
   toggle() {
     console.log('toggle button clicked');
