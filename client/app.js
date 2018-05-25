@@ -23,7 +23,7 @@ class App extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     //fetching data clientside
     fetch('/api/articles').then((data) => {
       return data.json();
