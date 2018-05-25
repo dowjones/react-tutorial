@@ -53,7 +53,7 @@ class Article extends Component {
   //remember that this is not HTML!!
   //https://reactjs.org/docs/introducing-jsx.html
   render() {
-    return <div>{this.props.headline}</div>;
+    return <div>Hello World</div>;
   }
 };
 
