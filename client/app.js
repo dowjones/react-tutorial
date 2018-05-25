@@ -116,7 +116,7 @@ class App extends Component {
         <div>
           <HelloWorld />
           <div className="countdown">{accountMessage}</div>
-          <div class="articles">
+          <div className="articles">
             {articleJSX}
           </div>
         </div>
