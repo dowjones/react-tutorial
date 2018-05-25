@@ -9,7 +9,7 @@ import style from '../client/style/main.css';
 //this is the component that generates the body of the page
 class App extends Component {
 
-  render(props) {
+  render() {
     return (
       <div>
         <HelloWorld />
@@ -33,8 +33,8 @@ import style from '../client/style/main.css';
 
 //this is the component that generates the body of the page
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.toggle = this.toggle.bind(this);
 
