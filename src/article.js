@@ -8,20 +8,39 @@ class Article extends Component {
 
   //Component Lifecycle
   //https://reactjs.org/docs/react-component.html#the-component-lifecycle
-  componentWillMount() {
+  /* DEPRECATED LIFECYCLE METHODS BELOW
+  UNSAFE_componentWillMount() {
     console.log('component will mount');
   }
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    console.log('component will receive props');
+  }
+  UNSAFE_componentWillUpdate() {
+    console.log('component will update');
+  }
+  */
+
+
+  static getDerivedStateFromProps(props, state) {
+    console.log('get derived state from props');
+    return null;
+  }
+
   componentDidMount() {
     console.log('component did mount');
   }
   shouldComponentUpdate() {
     return true;
   }
-  componentWillUpdate() {
-    console.log('component will update');
+  getSnapshotBeforeUpdate(prevProps, prevState){
+    console.log('get snapshot before update');
+    return { foo: 'bar' };
   }
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState, snapshot) {
     console.log('component did update');
+  }
+  componentWillUnmount() {
+    console.log('component will unmount');
   }
 
   //this fires every time a prop or state changes

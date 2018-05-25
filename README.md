@@ -9,7 +9,7 @@ We’ll assume you have a basic understanding of the JavaScript language. We als
 ## Instructions
 - [Install](https://nodejs.org/en/download/) Node.js
 - `npm install`
-- `npm run start`
+- `npm start`
 - Open [http://localhost:3000](http://localhost:3000) and [http://localhost:3000/api/articles](http://localhost:3000/api/articles) in browser
 
 ## Where is everything?
@@ -28,6 +28,8 @@ We’ll assume you have a basic understanding of the JavaScript language. We als
 - [Express Guide](https://expressjs.com/en/guide/routing.html)
 - [Babel](http://babeljs.io/)
 - [ES6 Overview](https://github.com/lukehoban/es6features)
+- [Hot Module Replacement Documentation](https://webpack.js.org/concepts/hot-module-replacement/)
+- [AWS Cloud9 IDE Setup Instructions](https://github.com/dowjones/react-tutorial/blob/master/AWS.Cloud9.Instructions.md)
 
 ## License
 Licensed under the [MIT License](https://github.com/dowjones/react-tutorial/blob/master/LICENSE)
