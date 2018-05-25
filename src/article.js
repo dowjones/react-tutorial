@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 //Basic Article Component
 class Article extends Component {
   constructor() {
-    super();
+    super(props);
 
     //initial state
     this.state = {};
