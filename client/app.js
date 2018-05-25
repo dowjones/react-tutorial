@@ -12,14 +12,15 @@ class App extends Component {
   constructor() {
     super();
 
-    this.toggle = this.toggle.bind(this);
+    this.toggleSummaries = this.toggleSummaries.bind(this);
 
     //default state
     //this keeps track of "live" data on the browser
     this.state = {
       articles: null,
       error: null,
-      loaded: false
+      loaded: false,
+      showSummaries: false
     };
   }
 
@@ -47,12 +48,17 @@ class App extends Component {
   }
 
   //click handler for button
-  toggle() {
+  toggleSummaries() {
+
     console.log('toggle button clicked');
+
+    this.setState((prevState, props) => ({
+      showSummaries: !prevState.showSummaries
+    }));
   }
 
   render() {
-    const {loaded, error, articles} = this.state;
+    const {loaded, error, articles, showSummaries} = this.state;
     //  code above is equal to this:
     //  const loaded = this.state.loaded;
     //  const error = this.state.error;
@@ -73,6 +79,8 @@ class App extends Component {
           <Article
             key={idx}
             headline={article.headline}
+            summary={article.summary}
+            showSummary={showSummaries}
           />
         );
       });
@@ -85,7 +93,7 @@ class App extends Component {
 
       return (
         <div>
-          <button onClick={this.toggle}>Toggle Something</button>
+          <button onClick={this.toggleSummaries}>{showSummaries ? 'Hide' : 'Show'} Summaries</button>
           <HelloWorld />
           <HelloWorld message="Hi!" />
           {articleJSX}
